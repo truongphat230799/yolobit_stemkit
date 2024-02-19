@@ -452,6 +452,7 @@ Blockly.Blocks['stemkit_sound_playtrack'] = {
 Blockly.Python['stemkit_sound_playtrack'] = function(block) {
   var number_track = Blockly.Python.valueToCode(block, 'track', Blockly.Python.ORDER_ATOMIC);
   var dropdown_port = block.getFieldValue('PORT');
+  var port;
 
   if (dropdown_port == 'A'){
     port = 'sound = machine.UART(1, baudrate=9600, rx=pin0.pin, tx=pin13.pin)\n';
@@ -460,8 +461,7 @@ Blockly.Python['stemkit_sound_playtrack'] = function(block) {
     port = 'sound = machine.UART(1, baudrate=9600, rx=pin1.pin, tx=pin14.pin)\n';
   }
   Blockly.Python.definitions_['import_yolobit'] = 'from yolobit import *';
-  Blockly.Python.definitions_['import_sound_player'] = 'from yolobit_sound_player import *';
-  Blockly.Python.definitions_['create_sound'] = port;
+  Blockly.Python.definitions_['import_sound_player'] = 'from yolobit_sound_player import *'+ port;
   var number_vol = Blockly.Python.valueToCode(block, 'vol', Blockly.Python.ORDER_ATOMIC);
   // TODO: Assemble Python into code variable.
 
