@@ -428,7 +428,7 @@ Blockly.Blocks['stemkit_sound_playtrack'] = {
     this.jsonInit(
       {
         type: "stemkit_sound_playtrack",
-        message0: "loa phát nhạc cổng %1 phát bài nhạc số %2 âm lượng %3",
+        message0: "loa phát nhạc cổng %2 phát bài nhạc số %1 âm lượng %3",
         args0: [
           {
             type: "input_value",
@@ -456,7 +456,7 @@ Blockly.Blocks['stemkit_sound_playtrack'] = {
         ],
         previousStatement: null,
         nextStatement: null,
-        colour: "#00A06B",
+        colour: ColorBlock,
         tooltip: "",
         helpUrl: ""
       }
