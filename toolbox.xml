@@ -11,7 +11,7 @@
       </value>
     </block>
 
-    <block type="aiot_dual_usb">
+    <block type="stemkit_dual_usb">
       <value name="percent"><shadow type="math_number"><field name="NUM">70</field></shadow></value>
     </block>
 
