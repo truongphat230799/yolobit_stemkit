@@ -96,15 +96,15 @@ Blockly.Blocks['stemkit_ultrasonic_read'] = {
 Blockly.Python['stemkit_ultrasonic_read'] = function (block) {
   var dropdown_port = block.getFieldValue('PORT');
   var port ;
-  Blockly.Python.definitions_['import_yolobit'] = 'from yolobit import *';
-  Blockly.Python.definitions_['import_ultrasonic'] = 'from stemkit_hcsr04 import HCSR04\n' + port;
   if (dropdown_port == 'A'){
     port = "stemkit_ultrasonic = HCSR04(trigger_pin=pin0.pin, echo_pin=pin13.pin)\n";
   
   }  else {
     port = "stemkit_ultrasonic = HCSR04(trigger_pin=pin1.pin, echo_pin=pin14.pin)\n";
   }
-  
+  Blockly.Python.definitions_['import_yolobit'] = 'from yolobit import *';
+  Blockly.Python.definitions_['import_ultrasonic'] = 'from stemkit_hcsr04 import HCSR04\n' + port;
+    
   // TODO: Assemble Python into code variable.
   var code = 'stemkit_ultrasonic.distance_cm()';
   // TODO: Change ORDER_NONE to the correct strength.
@@ -169,14 +169,14 @@ Blockly.Python['stemkit_ultrasonic_checkdistance'] = function (block) {
   var dropdown_type = block.getFieldValue('TYPE');
   var dropdown_port = block.getFieldValue('PORT');
   var port ;
-  Blockly.Python.definitions_['import_yolobit'] = 'from yolobit import *';
-  Blockly.Python.definitions_['import_ultrasonic'] = 'from stemkit_hcsr04 import HCSR04\n' + port;
   if (dropdown_port == 'A'){
     port = "stemkit_ultrasonic = HCSR04(trigger_pin=pin0.pin, echo_pin=pin13.pin)\n";
   
   }  else {
     port = "stemkit_ultrasonic = HCSR04(trigger_pin=pin1.pin, echo_pin=pin14.pin)\n";
   }
+  Blockly.Python.definitions_['import_yolobit'] = 'from yolobit import *';
+  Blockly.Python.definitions_['import_ultrasonic'] = 'from stemkit_hcsr04 import HCSR04\n' + port;
   // TODO: Assemble Python into code variable.
   var code = '';
   if (dropdown_type == 'CM')
@@ -438,6 +438,7 @@ Blockly.Blocks['stemkit_sound_playtrack'] = {
             "check": "Number"
           }
         ],
+        inputsInline: true,
         previousStatement: null,
         nextStatement: null,
         colour: ColorBlock,
