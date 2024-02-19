@@ -24,14 +24,6 @@ Blockly.Blocks["stemkit_led_tiny"] = {
             [
               "B",
               "pin1"
-            ],
-            [
-              "C",
-              "pin19"
-            ],
-            [
-              "D",
-              "pin19"
             ]
           ],
         },
@@ -86,14 +78,6 @@ Blockly.Blocks['stemkit_ultrasonic_read'] = {
               ],
               [
                 "B",
-                "MM"
-              ],
-              [
-                "C",
-                "CM"
-              ],
-              [
-                "D",
                 "MM"
               ]
             ]
