@@ -180,7 +180,7 @@ Blockly.Blocks['stemkit_ultrasonic_checkdistance'] = {
   },
 };
 
-Blockly.Python['aiot_ultrasonic_checkdistance'] = function (block) {
+Blockly.Python['stemkit_ultrasonic_checkdistance'] = function (block) {
   var value_distance = Blockly.Python.valueToCode(block, 'DISTANCE', Blockly.Python.ORDER_ATOMIC);
   var dropdown_type = block.getFieldValue('TYPE');
   var dropdown_port = block.getFieldValue('PORT');

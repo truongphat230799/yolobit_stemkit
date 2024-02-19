@@ -1,6 +1,6 @@
 <xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none">
-  <category name="AIOT KIT" colour="#44cbc6" icon="share-alt">
-    <block type="aiot_soil_sensor"/>
+  <category name="STEM KIT" colour="#44cbc6" icon="share-alt">
+    <block type="stemkit_soil_sensor"/>
 
     <block type="stemkit_ultrasonic_read"/>
     <block type="stemkit_ultrasonic_checkdistance">
