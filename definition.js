@@ -325,7 +325,7 @@ Blockly.Blocks['stemkit_move_motor'] = {
     this.jsonInit(
       {
         "type": "stemkit_move_motor",
-        "message0": "%3 M1 %1 %3 M2 %2 (0-100)",
+        "message0": "%3 M1 %1 %4 M2 %2 (0-100)",
         "args0": [
           {
             "type": "input_value",
@@ -336,6 +336,14 @@ Blockly.Blocks['stemkit_move_motor'] = {
             "type": "input_value",
             "name": "right_wheel_speed",
             "check": "Number",
+          },
+          {
+            "type": "field_image",
+            "src": ImgUrl2 + 'move.svg',
+            "width": 30,
+            "height": 30,
+            "alt": "*",
+            "flipRtl": false
           },
           {
             "type": "field_image",
