@@ -1,6 +1,5 @@
 const ColorBlock = '#44cbc6';
-const ImgUrl = 'https://ohstem-public.s3.ap-southeast-1.amazonaws.com/extensions/AITT-VN/yolobit_extension_aiot/images/';
-const ImgUrl2 = 'https://ohstem-public.s3.ap-southeast-1.amazonaws.com/extensions/AITT-VN/yolobit_extension_rover/images/';
+const ImgUrl = 'https://github.com/truongphat230799/yolobit_stemkit/tree/main/images/';
 // Tiny LED Module
 
 Blockly.Blocks["stemkit_led_tiny"] = {
@@ -294,7 +293,7 @@ Blockly.Blocks['stemkit_dual_usb'] = {
           },
           {
             "type": "field_image",
-            "src": ImgUrl2 + 'motor.svg',
+            "src": ImgUrl + 'motor.svg',
             "width": 30,
             "height": 30,
             "alt": "*",
@@ -339,7 +338,7 @@ Blockly.Blocks['stemkit_move_motor'] = {
           },
           {
             "type": "field_image",
-            "src": ImgUrl2 + 'move.svg',
+            "src": ImgUrl + 'move.svg',
             "width": 30,
             "height": 30,
             "alt": "*",
@@ -380,7 +379,7 @@ Blockly.Blocks['motor_stop'] = {
       "args0": [
         {
           "type": "field_image",
-          "src": ImgUrl2 + 'stop.svg',
+          "src": ImgUrl + 'stop.svg',
           "width": 30,
           "height": 30,
           "alt": "",
@@ -421,7 +420,7 @@ Blockly.Blocks["servo_write_angle"] = {
         },
         {
           "type": "field_image",
-          "src": ImgUrl2 + 'servo.png',
+          "src": ImgUrl + 'servo.png',
           "width": 30,
           "height": 30,
           "alt": "*",
@@ -463,7 +462,7 @@ Blockly.Blocks['servo360_write'] = {
           },
           {
             "type": "field_image",
-            "src": ImgUrl2 + 'servo.png',
+            "src": ImgUrl + 'servo.png',
             "width": 30,
             "height": 30,
             "alt": "*",
