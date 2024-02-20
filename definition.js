@@ -1,6 +1,6 @@
 const ColorBlock = '#44cbc6';
 const ImgUrl = 'https://ohstem-public.s3.ap-southeast-1.amazonaws.com/extensions/AITT-VN/yolobit_extension_aiot/images/';
-
+const ImgUrl2 = 'https://ohstem-public.s3.ap-southeast-1.amazonaws.com/extensions/AITT-VN/yolobit_extension_rover/images/';
 // Tiny LED Module
 
 Blockly.Blocks["stemkit_led_tiny"] = {
@@ -10,7 +10,7 @@ Blockly.Blocks["stemkit_led_tiny"] = {
       colour: ColorBlock,
       nextStatement: null,
       tooltip: "",
-      message0: "LED RGB cổng %1 đổi màu led %2 thành %3 %4",
+      message0: "%5 LED RGB cổng %1 đổi màu led %2 thành %3 %4",
       previousStatement: null,
       args0: [
         {
@@ -40,6 +40,14 @@ Blockly.Blocks["stemkit_led_tiny"] = {
         },
         { type: "input_value", name: "COLOR" },
         {type: "input_dummy"},
+        {
+          "type": "field_image",
+          "src": ImgUrl + 'rgb.png',
+          "width": 30,
+          "height": 30,
+          "alt": "*",
+          "flipRtl": false
+        }
       ],
       helpUrl: ""
     });
@@ -66,7 +74,7 @@ Blockly.Blocks['stemkit_ultrasonic_read'] = {
     this.jsonInit(
       {
         "type": "stemkit_ultrasonic_read",
-        "message0": "đọc cảm biến khoảng cách cổng %1",
+        "message0": "%2 đọc cảm biến khoảng cách cổng %1",
         "args0": [
           {
             "type": "field_dropdown",
@@ -81,6 +89,14 @@ Blockly.Blocks['stemkit_ultrasonic_read'] = {
                 "MM"
               ]
             ]
+          },
+          {
+            "type": "field_image",
+            "src": ImgUrl + 'ultrasonic.png',
+            "width": 30,
+            "height": 30,
+            "alt": "*",
+            "flipRtl": false
           }
         ],
         "output": null,
@@ -116,7 +132,7 @@ Blockly.Blocks['stemkit_ultrasonic_checkdistance'] = {
     this.jsonInit(
       {
         "type": "stemkit_ultrasonic_checkdistance",
-        "message0": "cảm biến khoảng cách cổng %4 đọc được < %1 %2 %3",
+        "message0": "%4 cảm biến khoảng cách cổng %4 đọc được < %1 %2 %3",
         "args0": [
           {
             "type": "input_dummy"
@@ -153,6 +169,14 @@ Blockly.Blocks['stemkit_ultrasonic_checkdistance'] = {
                 "B"
               ]
             ]
+          },
+          {
+            "type": "field_image",
+            "src": ImgUrl + 'ultrasonic.png',
+            "width": 30,
+            "height": 30,
+            "alt": "*",
+            "flipRtl": false
           }
         ],
         "output": "Boolean",
@@ -193,7 +217,7 @@ Blockly.Blocks['stemkit_soil_sensor'] = {
     this.jsonInit(
       {
         "type": "stemkit_soil_sensor",
-        "message0": "đọc độ ẩm đất (%%) cổng %1",
+        "message0": "%2 đọc độ ẩm đất (%%) cổng %1",
         "args0": [
           {
             "type": "field_dropdown",
@@ -208,6 +232,14 @@ Blockly.Blocks['stemkit_soil_sensor'] = {
                 "pin1"
               ]
             ]
+          },
+          {
+            "type": "field_image",
+            "src": ImgUrl + 'soil.png',
+            "width": 30,
+            "height": 30,
+            "alt": "*",
+            "flipRtl": false
           }
         ],
         "output": "Number",
@@ -239,7 +271,7 @@ Blockly.Blocks['stemkit_dual_usb'] = {
     this.jsonInit(
       {
         "type": "stemkit_dual_usb",
-        "message0": "bật máy bơm cổng %1 mức (0-100) %2 %%",
+        "message0": "%3 bật máy bơm cổng %1 mức (0-100) %2 %%",
         "args0": [
           {
             "type": "field_dropdown",
@@ -259,6 +291,14 @@ Blockly.Blocks['stemkit_dual_usb'] = {
             "type": "input_value",
             "name": "percent",
             "check": "Number"
+          },
+          {
+            "type": "field_image",
+            "src": ImgUrl + 'dual_usb.jpg',
+            "width": 30,
+            "height": 30,
+            "alt": "*",
+            "flipRtl": false
           }
         ],
         "previousStatement": null,
@@ -285,7 +325,7 @@ Blockly.Blocks['stemkit_move_motor'] = {
     this.jsonInit(
       {
         "type": "stemkit_move_motor",
-        "message0": "xoay động cơ M1 tốc độ %1 M2 tốc độ %2 (0-100)",
+        "message0": "%3 xoay động cơ M1 tốc độ %1 M2 tốc độ %2 (0-100)",
         "args0": [
           {
             "type": "input_value",
@@ -296,6 +336,14 @@ Blockly.Blocks['stemkit_move_motor'] = {
             "type": "input_value",
             "name": "right_wheel_speed",
             "check": "Number",
+          },
+          {
+            "type": "field_image",
+            "src": ImgUrl2 + 'motor.svg',
+            "width": 30,
+            "height": 30,
+            "alt": "*",
+            "flipRtl": false
           }
         ],
         "inputsInline": true,
@@ -320,8 +368,16 @@ Blockly.Blocks['motor_stop'] = {
   init: function () {
     this.jsonInit({
       "type": "motor_stop",
-      "message0": "dừng di chuyển",
+      "message0": "%1 dừng di chuyển",
       "args0": [
+        {
+          "type": "field_image",
+          "src": ImgUrl2 + 'motor.svg',
+          "width": 30,
+          "height": 30,
+          "alt": "*",
+          "flipRtl": false
+        }
         ],
       "inputsInline": true,
       "previousStatement": null,
@@ -343,7 +399,7 @@ Blockly.Blocks["servo_write_angle"] = {
     this.jsonInit({
       colour: ColorBlock,
       nextStatement: null,
-      message0: "servo %2 quay đến góc %1 (0-180)",
+      message0: "%3 servo %2 quay đến góc %1 (0-180)",
       previousStatement: null,
       args0: [
         { type: "input_value", name: "angle", check: "Number" },
@@ -354,6 +410,14 @@ Blockly.Blocks["servo_write_angle"] = {
             ["S1", "1"],
             ["S2", "2"],
           ],
+        },
+        {
+          "type": "field_image",
+          "src": ImgUrl2 + 'servo.png',
+          "width": 30,
+          "height": 30,
+          "alt": "*",
+          "flipRtl": false
         }
       ],
       helpUrl: null,
@@ -374,7 +438,7 @@ Blockly.Blocks['servo360_write'] = {
     this.jsonInit(
       {
         "type": "servo360_write",
-        "message0": "servo chân %1 quay tốc độ %2 (0-100)",
+        "message0": "%3 servo chân %1 quay tốc độ %2 (0-100)",
         "args0": [
           {
             type: "field_dropdown",
@@ -388,6 +452,14 @@ Blockly.Blocks['servo360_write'] = {
             "type": "input_value",
             "name": "speed",
             "check": "Number"
+          },
+          {
+            "type": "field_image",
+            "src": ImgUrl2 + 'servo.png',
+            "width": 30,
+            "height": 30,
+            "alt": "*",
+            "flipRtl": false
           }
         ],
         "inputsInline": true,
@@ -412,7 +484,7 @@ Blockly.Blocks['stemkit_sound_playtrack'] = {
     this.jsonInit(
       {
         type: "stemkit_sound_playtrack",
-        message0: "loa phát nhạc cổng %2 phát bài nhạc số %1 âm lượng %3",
+        message0: "%4 loa phát nhạc cổng %2 phát bài nhạc số %1 âm lượng %3",
         args0: [
           {
             type: "input_value",
@@ -436,6 +508,14 @@ Blockly.Blocks['stemkit_sound_playtrack'] = {
             "type": "input_value",
             "name": "vol",
             "check": "Number"
+          },
+          {
+            "type": "field_image",
+            "src": "https://i.ibb.co/1mM59bs/sound.png",
+            "width": 20,
+            "height": 20,
+            "alt": "*",
+            "flipRtl": false
           }
         ],
         inputsInline: true,
