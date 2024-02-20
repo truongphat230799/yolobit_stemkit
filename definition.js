@@ -294,7 +294,7 @@ Blockly.Blocks['stemkit_dual_usb'] = {
           },
           {
             "type": "field_image",
-            "src": ImgUrl + 'dual_usb.jpg',
+            "src": ImgUrl + 'motor.svg',
             "width": 30,
             "height": 30,
             "alt": "*",
@@ -339,7 +339,7 @@ Blockly.Blocks['stemkit_move_motor'] = {
           },
           {
             "type": "field_image",
-            "src": ImgUrl2 + 'motor.svg',
+            "src": ImgUrl2 + 'move.svg',
             "width": 30,
             "height": 30,
             "alt": "*",
@@ -372,10 +372,10 @@ Blockly.Blocks['motor_stop'] = {
       "args0": [
         {
           "type": "field_image",
-          "src": ImgUrl2 + 'motor.svg',
+          "src": ImgUrl2 + 'move.svg',
           "width": 30,
           "height": 30,
-          "alt": "*",
+          "alt": "",
           "flipRtl": false
         }
         ],
@@ -512,8 +512,8 @@ Blockly.Blocks['stemkit_sound_playtrack'] = {
           {
             "type": "field_image",
             "src": "https://i.ibb.co/1mM59bs/sound.png",
-            "width": 20,
-            "height": 20,
+            "width": 30,
+            "height": 30,
             "alt": "*",
             "flipRtl": false
           }
