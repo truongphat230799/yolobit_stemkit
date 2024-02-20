@@ -346,7 +346,7 @@ Blockly.Blocks['stemkit_move_motor'] = {
           },
           {
             "type": "field_image",
-            "src": ImgUrl2 + 'move.svg',
+            "src": ImgUrl + 'move.svg',
             "width": 30,
             "height": 30,
             "alt": "*",
