@@ -372,7 +372,7 @@ Blockly.Blocks['motor_stop'] = {
       "args0": [
         {
           "type": "field_image",
-          "src": ImgUrl2 + 'move.svg',
+          "src": ImgUrl2 + 'stop.svg',
           "width": 30,
           "height": 30,
           "alt": "",
