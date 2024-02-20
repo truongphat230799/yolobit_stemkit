@@ -132,7 +132,7 @@ Blockly.Blocks['stemkit_ultrasonic_checkdistance'] = {
     this.jsonInit(
       {
         "type": "stemkit_ultrasonic_checkdistance",
-        "message0": "%4 cảm biến khoảng cách cổng %4 đọc được < %1 %2 %3",
+        "message0": "%5 cảm biến khoảng cách cổng %4 đọc được < %1 %2 %3",
         "args0": [
           {
             "type": "input_dummy"
