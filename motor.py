@@ -137,7 +137,7 @@ class Motor():
             degree = 90 - (value/100)*90
             self.servo_write(index, degree)
 
-motor = Motorr()
+motor = Motor()
 
 
 def stop_all():  # override stop function called by app

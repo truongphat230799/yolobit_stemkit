@@ -82,11 +82,11 @@ Blockly.Blocks['stemkit_ultrasonic_read'] = {
             "options": [
               [
                 "A",
-                "CM"
+                "A"
               ],
               [
                 "B",
-                "MM"
+                "B"
               ]
             ]
           },
