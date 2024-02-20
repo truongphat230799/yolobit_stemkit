@@ -10,7 +10,7 @@ Blockly.Blocks["stemkit_led_tiny"] = {
       colour: ColorBlock,
       nextStatement: null,
       tooltip: "",
-      message0: "%5 LED RGB cổng %1 đổi màu led %2 thành %3 %4",
+      message0: "%5 LED %1 đổi %2 thành %3 %4",
       previousStatement: null,
       args0: [
         {
@@ -74,7 +74,7 @@ Blockly.Blocks['stemkit_ultrasonic_read'] = {
     this.jsonInit(
       {
         "type": "stemkit_ultrasonic_read",
-        "message0": "%2 đọc cảm biến khoảng cách cổng %1",
+        "message0": "%2 cảm biến khoảng cách %1",
         "args0": [
           {
             "type": "field_dropdown",
@@ -132,7 +132,7 @@ Blockly.Blocks['stemkit_ultrasonic_checkdistance'] = {
     this.jsonInit(
       {
         "type": "stemkit_ultrasonic_checkdistance",
-        "message0": "%5 cảm biến khoảng cách cổng %4 đọc được < %1 %2 %3",
+        "message0": "%5 cảm biến khoảng cách %4 < %1 %2 %3",
         "args0": [
           {
             "type": "input_dummy"
@@ -217,7 +217,7 @@ Blockly.Blocks['stemkit_soil_sensor'] = {
     this.jsonInit(
       {
         "type": "stemkit_soil_sensor",
-        "message0": "%2 đọc độ ẩm đất (%%) cổng %1",
+        "message0": "%2độ ẩm đất (%%) %1",
         "args0": [
           {
             "type": "field_dropdown",
@@ -271,7 +271,7 @@ Blockly.Blocks['stemkit_dual_usb'] = {
     this.jsonInit(
       {
         "type": "stemkit_dual_usb",
-        "message0": "%3 bật máy bơm cổng %1 mức (0-100) %2 %%",
+        "message0": "%3 máy bơm %1 bật (0-100) %2 %%",
         "args0": [
           {
             "type": "field_dropdown",
@@ -325,7 +325,7 @@ Blockly.Blocks['stemkit_move_motor'] = {
     this.jsonInit(
       {
         "type": "stemkit_move_motor",
-        "message0": "%3 xoay động cơ M1 tốc độ %1 M2 tốc độ %2 (0-100)",
+        "message0": "%3 động cơ M1 tốc độ %1 M2 tốc độ %2 (0-100)",
         "args0": [
           {
             "type": "input_value",
@@ -368,7 +368,7 @@ Blockly.Blocks['motor_stop'] = {
   init: function () {
     this.jsonInit({
       "type": "motor_stop",
-      "message0": "%1 dừng di chuyển",
+      "message0": "%1 dừng động cơ",
       "args0": [
         {
           "type": "field_image",
@@ -438,7 +438,7 @@ Blockly.Blocks['servo360_write'] = {
     this.jsonInit(
       {
         "type": "servo360_write",
-        "message0": "%3 servo chân %1 quay tốc độ %2 (0-100)",
+        "message0": "%3 servo %1 quay tốc độ %2 (0-100)",
         "args0": [
           {
             type: "field_dropdown",
@@ -484,7 +484,7 @@ Blockly.Blocks['stemkit_sound_playtrack'] = {
     this.jsonInit(
       {
         type: "stemkit_sound_playtrack",
-        message0: "%4 loa phát nhạc cổng %2 phát bài nhạc số %1 âm lượng %3",
+        message0: "%4 loa %2 phát bài %1 âm lượng %3",
         args0: [
           {
             type: "input_value",
