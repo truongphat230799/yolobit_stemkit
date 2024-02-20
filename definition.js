@@ -74,7 +74,7 @@ Blockly.Blocks['stemkit_ultrasonic_read'] = {
     this.jsonInit(
       {
         "type": "stemkit_ultrasonic_read",
-        "message0": "%2 cảm biến khoảng cách %1",
+        "message0": "%2 khoảng cách %1",
         "args0": [
           {
             "type": "field_dropdown",
@@ -132,7 +132,7 @@ Blockly.Blocks['stemkit_ultrasonic_checkdistance'] = {
     this.jsonInit(
       {
         "type": "stemkit_ultrasonic_checkdistance",
-        "message0": "%5 cảm biến khoảng cách %4 < %1 %2 %3",
+        "message0": "%5 khoảng cách %4 < %1 %2 %3",
         "args0": [
           {
             "type": "input_dummy"
@@ -325,7 +325,7 @@ Blockly.Blocks['stemkit_move_motor'] = {
     this.jsonInit(
       {
         "type": "stemkit_move_motor",
-        "message0": "%3 động cơ M1 tốc độ %1 M2 tốc độ %2 (0-100)",
+        "message0": "%3 M1 %1 %3 M2 %2 (0-100)",
         "args0": [
           {
             "type": "input_value",
@@ -399,7 +399,7 @@ Blockly.Blocks["servo_write_angle"] = {
     this.jsonInit({
       colour: ColorBlock,
       nextStatement: null,
-      message0: "%3 servo %2 quay đến góc %1 (0-180)",
+      message0: "%3 %2 quay đến góc %1 (0-180)",
       previousStatement: null,
       args0: [
         { type: "input_value", name: "angle", check: "Number" },
@@ -438,7 +438,7 @@ Blockly.Blocks['servo360_write'] = {
     this.jsonInit(
       {
         "type": "servo360_write",
-        "message0": "%3 servo %1 quay tốc độ %2 (0-100)",
+        "message0": "%3 %1 quay %2 (0-100)",
         "args0": [
           {
             type: "field_dropdown",
