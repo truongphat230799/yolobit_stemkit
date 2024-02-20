@@ -294,7 +294,7 @@ Blockly.Blocks['stemkit_dual_usb'] = {
           },
           {
             "type": "field_image",
-            "src": ImgUrl + 'motor.svg',
+            "src": ImgUrl2 + 'motor.svg',
             "width": 30,
             "height": 30,
             "alt": "*",
