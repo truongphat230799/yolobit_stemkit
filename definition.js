@@ -364,7 +364,7 @@ Blockly.Blocks['stemkit_move_motor'] = {
 };
 
 Blockly.Python["stemkit_move_motor"] = function (block) {
-  Blockly.Python.definitions_['import_motor'] = 'from motor import *';
+  Blockly.Python.definitions_['import_stemkit_motor'] = 'from stemkit_motor import *';
   var left_wheel_speed = Blockly.Python.valueToCode(block, 'left_wheel_speed', Blockly.Python.ORDER_ATOMIC);
   var right_wheel_speed = Blockly.Python.valueToCode(block, 'right_wheel_speed', Blockly.Python.ORDER_ATOMIC);
   // TODO: Assemble Python into code variable.
@@ -396,7 +396,7 @@ Blockly.Blocks['motor_stop'] = {
 };
 
 Blockly.Python["motor_stop"] = function (block) {
-  Blockly.Python.definitions_['import_motor'] = 'from motor import *';
+  Blockly.Python.definitions_['import_stemkit_motor'] = 'from stemkit_motor import *';
   // TODO: Assemble Python into code variable.
   var code = "motor.stop()\n";
   return code;
@@ -434,7 +434,7 @@ Blockly.Blocks["servo_write_angle"] = {
 };
 
 Blockly.Python['servo_write_angle'] = function (block) {
-  Blockly.Python.definitions_['import_motor'] = 'from motor import *';
+  Blockly.Python.definitions_['import_stemkit_motor'] = 'from stemkit_motor import *';
   var value_output = Blockly.Python.valueToCode(block, 'angle', Blockly.Python.ORDER_ATOMIC);
   var dropdown_pin = block.getFieldValue('pin');
   var code = 'motor.servo_write(' + dropdown_pin + ', ' + value_output + ')\n';
@@ -480,7 +480,7 @@ Blockly.Blocks['servo360_write'] = {
 };
 
 Blockly.Python['servo360_write'] = function (block) {
-  Blockly.Python.definitions_['import_motor'] = 'from motor import *';
+  Blockly.Python.definitions_['import_stemkit_motor'] = 'from stemkit_motor import *';
   var value_output = Blockly.Python.valueToCode(block, 'speed', Blockly.Python.ORDER_ATOMIC);
   var dropdown_pin = block.getFieldValue('pin');
   var code = 'motor.servo360_write(' + dropdown_pin + ', ' + value_output + ')\n';
