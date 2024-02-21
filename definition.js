@@ -463,7 +463,7 @@ Blockly.Blocks['servo360_write'] = {
           },
           {
             "type": "field_image",
-            "src": ImgUrl + 'servo.png',
+            "src": ImgUrl2 + 'servo.png',
             "width": 30,
             "height": 30,
             "alt": "*",
