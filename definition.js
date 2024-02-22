@@ -437,7 +437,13 @@ Blockly.Python['servo_write_angle'] = function (block) {
   Blockly.Python.definitions_['import_stemkit_motor'] = 'from stemkit_motor import *';
   var value_output = Blockly.Python.valueToCode(block, 'angle', Blockly.Python.ORDER_ATOMIC);
   var dropdown_pin = block.getFieldValue('pin');
-  var code = 'motor.servo_write(' + dropdown_pin + ', ' + value_output + ')\n';
+  var code = '';
+  if (dropdown_pin == '1'){
+    code = 'pin11.servo_write('+ value_output + ')\n';
+  }
+  else{
+    code = 'pin16.servo_write('+ value_output + ')\n';
+  }  
   return code;
 };
 
@@ -483,7 +489,13 @@ Blockly.Python['servo360_write'] = function (block) {
   Blockly.Python.definitions_['import_stemkit_motor'] = 'from stemkit_motor import *';
   var value_output = Blockly.Python.valueToCode(block, 'speed', Blockly.Python.ORDER_ATOMIC);
   var dropdown_pin = block.getFieldValue('pin');
-  var code = 'motor.servo360_write(' + dropdown_pin + ', ' + value_output + ')\n';
+  var code = '';
+  if (dropdown_pin == '1'){
+    code = 'pin11.servo360_write('+ value_output + ')\n';
+  }
+  else{
+    code = 'pin16.servo360_write('+ value_output + ')\n';
+  }  
   return code;
 };
 
